@@ -1,0 +1,114 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: url(bg.jpg);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 70vh;
+    font-family: Arial, sans-serif;
+}
+
+#score-container {
+    width: 100%;
+    padding: 10px;
+    background-color: white;
+    border-bottom: 1px solid #ccc;
+}
+
+#score-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+#score-list li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f9f9f9;
+    margin: 5px 0;
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+.body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    width: 100%;
+    margin-top: 10px;
+}
+
+#board {
+    display: grid;
+    grid-template-rows: repeat(18, 1fr);
+    grid-template-columns: repeat(18, 1fr);
+    gap: 1px;
+    background-color: greenyellow;
+    width: 400px;
+    height: 400px;
+}
+
+.head {
+    background-color: darkgreen;
+    border-radius: 100px;
+}
+
+.snake {
+    background-color: lightgreen;
+}
+
+.food {
+    background-color: pink;
+    border-radius: 100px;
+
+}
+
+#task-input-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+
+#task-input-container input {
+    padding: 5px;
+    margin-right: 5px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+}
+
+#task-input-container button {
+    padding: 5px 10px;
+    border: none;
+    background-color: green;
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+}
+
+#task-input-container button:hover {
+    background-color: darkgreen;
+}
+
+#scoreBox, #hiscoreBox {
+    margin: 5px 0;
+    font-size: 20px;
+    color: white;
+}
+#reset-game{
+    margin: 0 0 0 5px;
+}
+#score-container{
+    background-color: rgb(143, 184, 82);
+
+
+}
